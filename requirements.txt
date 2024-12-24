@@ -1,0 +1,5 @@
+streamlit==1.40.1
+crewai==0.80.0
+google-cloud-aiplatform==1.70.0
+magika==0.5.1
+gitpython==3.1.43

@@ -1,0 +1,22 @@
+Give me a summary of this codebase, and tell me the top 5 things that I can learn from it.
+
+Provide a getting started guide to onboard new developers to the codebase.
+
+Finding Bug:
+Find the top 3 most severe issues in the codebase.
+
+Fixing Bug:
+Find the most severe bug in the codebase that you can provide a code fix for. Please explain the bug, steps taken to solve it. The indicate source files and changes in them to be made
+
+Troubleshooting Guide:
+Provide a troubleshooting guide to help resolve common issues.
+
+Feature Request:
+Implement the following feature request: The output zip file is named as Output.zip. Instead, name of the file shuld be <companyid><jobid>.zip
+
+Improve App:
+How can I make this application more reliable? Consider best practices from https://www.r9y.dev/
+How can you secure the application?
+
+Learning:
+Create a quiz about the concepts used in my codebase to help me solidify my understanding.
