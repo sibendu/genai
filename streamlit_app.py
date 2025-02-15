@@ -5,6 +5,7 @@ if "role" not in st.session_state:
 
 ROLE_ADMIN = "Admin"
 ROLE_GENERAL = "General"
+ROLE_AGENT = "Agent"
 
 ROLES = [ROLE_ADMIN, ROLE_GENERAL]
 
@@ -53,17 +54,27 @@ item_4 = st.Page("admin/adminitem1.py",
 
 )
 
+item_5 = st.Page("agent/research.py",
+    title="Team Research",
+    icon=":material/help:",
+
+)
+
 account_pages = [logout_page, settings]
 request_pages = [item_1, item_2]
 admin_pages = [item_3, item_4]
+agent_pages = [item_5]
 
-st.logo("images/icon_blue.png", icon_image="images/icon_blue.png")
+if role:
+    st.logo("images/icon_blue.png", icon_image="images/icon_blue.png")
 
 page_dict = {}
 if st.session_state.role == ROLE_ADMIN:
     page_dict[ROLE_ADMIN] = admin_pages
 if st.session_state.role in [ROLE_GENERAL, ROLE_ADMIN]:
     page_dict[ROLE_GENERAL] = request_pages
+if st.session_state.role in [ROLE_GENERAL, ROLE_ADMIN]:
+    page_dict[ROLE_AGENT] = agent_pages
 
 if len(page_dict) > 0:
     pg = st.navigation({"Account": account_pages} | page_dict)

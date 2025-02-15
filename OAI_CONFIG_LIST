@@ -1,0 +1,9 @@
+[
+  {
+    "model": "gpt-4",
+    "api_type": "azure",
+    "api_key": "4c47958493254eccba0c480c2f8de157",
+    "base_url": "https://it-dce-openai-assistant-useast2.openai.azure.com/",
+    "api_version": "2023-07-01-preview"
+  }
+]
