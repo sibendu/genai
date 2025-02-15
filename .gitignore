@@ -2,3 +2,4 @@
 .env
 repo
 .idea
+.cache
